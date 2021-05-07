@@ -1,6 +1,6 @@
-# Electron, TypeScript, Material-UI, React Boilerplate
+# GUI application for operators
 
-Modern and lightweight boilerplate built with electron, typescript, react, webpack, and material-ui. This also demonstrates live-reloading and static images.
+Built with electron, typescript, react, webpack, and material-ui. This also demonstrates live-reloading and static images.
 
 ## Major technologies
 
