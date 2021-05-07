@@ -15,13 +15,12 @@ Modern and lightweight boilerplate built with electron, typescript, react, webpa
 1. Download this repo or run the following command to clone it
 
 ```sh
-git clone https://github.com/hellosoftware-io/electron-typescript-react-material-ui myapp
+git clone https://github.com/Hidenaga41/GUIAppForOperators.git
 ```
 
 2. Using NPM 7, run the following command to install dependencies
 
 ```sh
-cd myapp
 npm install
 ```
 

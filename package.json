@@ -18,7 +18,7 @@
     "package:dist": "electron-builder --dir"
   },
   "keywords": [],
-  "author": "HelloSoftware",
+  "author": "Hidenaga Ushijima",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.1.5",
