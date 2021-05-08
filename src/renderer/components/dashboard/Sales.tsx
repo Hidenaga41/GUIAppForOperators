@@ -105,7 +105,7 @@ const Sales: React.FC = (props) => {
             position: 'relative',
           }}
         >
-          <Bar data={data} options={options} />
+          <Bar data={data} options={options} type="bar" />
         </Box>
       </CardContent>
       <Divider />

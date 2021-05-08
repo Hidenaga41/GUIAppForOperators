@@ -88,7 +88,7 @@ const TrafficByDevice: React.FC = (props) => {
             position: 'relative',
           }}
         >
-          <Doughnut data={data} options={options} />
+          <Doughnut data={data} options={options} type="doughnut" />
         </Box>
         <Box
           sx={{

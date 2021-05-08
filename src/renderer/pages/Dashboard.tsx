@@ -3,6 +3,12 @@ import { Helmet } from 'react-helmet';
 import { Box, Container, Grid } from '@material-ui/core';
 import Budget from '../components/dashboard/Budget';
 import TotalCustomers from '../components/dashboard/TotalCustomers';
+import TasksProgress from '../components/dashboard/TasksProgress';
+import TotalProfit from '../components/dashboard/TotalProfit';
+import Sales from '../components/dashboard/Sales';
+import TrafficByDevice from '../components/dashboard/TrafficByDevice';
+import LatestProducts from '../components/dashboard/LatestProducts';
+import LatestOrders from '../components/dashboard/LatestOrders';
 
 const Dashboard: React.FC = () => {
   return (
@@ -29,16 +35,16 @@ const Dashboard: React.FC = () => {
               <TasksProgress />
             </Grid>
             <Grid item lg={3} sm={6} xl={3} xs={12}>
-              {/* <TotalProfit sx={{ height: '100%' }} /> */}
+              <TotalProfit />
             </Grid>
             <Grid item lg={8} md={12} xl={9} xs={12}>
               <Sales />
             </Grid>
             <Grid item lg={4} md={6} xl={3} xs={12}>
-              <TrafficByDevice sx={{ height: '100%' }} />
+              <TrafficByDevice />
             </Grid>
             <Grid item lg={4} md={6} xl={3} xs={12}>
-              <LatestProducts sx={{ height: '100%' }} />
+              <LatestProducts />
             </Grid>
             <Grid item lg={8} md={12} xl={9} xs={12}>
               <LatestOrders />
