@@ -96,7 +96,17 @@ const crateMenu = () => {
   const menu_temp = [
     {
       label: 'File',
-      submenu: [{ label: 'New' }, { label: 'File' }, { label: 'Quite' }],
+      submenu: [
+        {
+          label: 'New',
+          click: () => {
+            console.log('new window');
+            createWindow();
+          },
+        },
+        { label: 'File' },
+        { label: 'Quite' },
+      ],
     },
     {
       label: 'Edit',
