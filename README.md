@@ -64,11 +64,3 @@ myapp/
 | - tsconfig.json       //- TypeScript config
 | - webpack.config.js   //- Webpack config
 ```
-
-## Contributing
-
-Pull requests are always welcome 😃.
-
-## License
-
-This project is licensed under the terms of the [MIT license](LICENSE).
