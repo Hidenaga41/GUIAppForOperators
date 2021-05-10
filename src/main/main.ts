@@ -1,6 +1,7 @@
+/* eslint-disable no-console */
 import os from 'os';
 import fs from 'fs';
-import { app, BrowserWindow, session } from 'electron';
+import { app, BrowserWindow, session, Menu } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
@@ -63,7 +64,7 @@ const createWindow = async () => {
         .catch((err) => console.log(`ERROR: ${err}`));
     }
 
-    let child = new BrowserWindow({
+    const child = new BrowserWindow({
       width: 350,
       height: 200,
       backgroundColor: '#f2f2f2',
@@ -90,6 +91,24 @@ const createWindow = async () => {
     mainWindow = null;
   });
 };
+
+const crateMenu = () => {
+  const menu_temp = [
+    {
+      label: 'File',
+      submenu: [{ label: 'New' }, { label: 'File' }, { label: 'Quite' }],
+    },
+    {
+      label: 'Edit',
+      submenu: [{ label: 'New' }, { label: 'File' }, { label: 'Quite' }],
+    },
+  ];
+  const menu = Menu.buildFromTemplate(menu_temp);
+
+  Menu.setApplicationMenu(menu);
+};
+
+crateMenu();
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
